@@ -1,7 +1,369 @@
 body {
     margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+}
+
+header nav .optionuser {
+    width: 40vw;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    list-style: none;
+}
+
+nav .optionuser {
+    margin: 0;
+    align-items: center;
+    padding-right: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.firstpart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.email {
+    padding-left: 15px;
+}
+
+.email:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.images {
+    padding-left: 15px;
+}
+
+.images:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.secondpart {
+    display: flex;
+    position: relative;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.menudesplegable {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 25px 0px 10px 0;
+}
+
+.puntitos {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.puntitos:hover {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color:  rgba(179, 234, 253, 0.212);
+}
+
+a .blockpoint {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img .circle-menu {
+    width: 24px;
+    height: 24px;
+}
+
+.access {
+    margin: 0 8px 0 8px;
+    background-color: #1a73e8;
+    color: white;
+    border: 1px solid transparent;
+    padding: 9px 23px;
+    border-radius: 5px;
+}
+
+.access:hover {
+    background-color: #2f81ec;
+}
+
+.google_icon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    object-fit: contain;
+    object-position: center bottom;
+    margin: 0%;
+}
+
+img .logo {
+    padding: 0;
+    margin: 0;
+}
+
+.caja_busqueda {
+    width: 100vw;
+    height: 160px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.bloque_cent {
+    margin: 0 auto;
+    width: 640px;
+    padding-top: 6px;
+    width: auto;
+    max-width: 584px;
+    position: relative;
+}
+
+.boxcirc {
+    display: flex;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 683px;
+    width: auto;
+    max-width: 582px;
+}
+
+.botones_busqueda {
+    width: 100vw;
+    height: 44px;
+    max-width: 580px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones_busqueda:hover {
+    width: 100vw;
+    height: 44px;
+    max-width: 580px;
+    box-shadow: -1px 0px 6px 1px #cceafc;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.lupa {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 0;
+    margin: 0px 0px 0px 7px;
+}
+
+.icon_lupa {
+    margin: 9px 0 9px 0;
+}
+
+span .lupa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 img {
-    background-image: url(https://www.google.com.mx/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 42vw;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    margin: 10px 20px 10px -3px;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imput_text {
+    color: transparent;
+    width: 250px;
+    white-space: pre;
+    height: 34px;
+    font-size: 16px;
+}
+
+.text_search {
+    width: 35vw;
+    height: 34px;
+    border: none;
+    box-sizing: content-box;
+    outline: none;
+}
+
+.search_voice {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 0 10px 0 -8px;
+}
+
+.botones_extra {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_botones {
+    width: 100vw;
+    height: 70px;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+button:hover {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px 1px #cceafc;
+}
+
+.spaceblank {
+    width: 100vw;
+    height: 32vh;
+}
+
+.pie_de_pagina {
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ubication {
+    width: 100vw;
+    height: 30%;
+    margin-top: 10px;
+    padding: 0 30px 0px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+}
+
+.information {
+    width: 100vw;
+    height: 70%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.information .first {
+    justify-content: center;
+    align-items: center;
+}
+
+.information a {
+    color: #70757a;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.information a:hover {
+    text-decoration: underline;
+    color: #70757a;
+}
+
+.information .second {
+    justify-content: center;
+    align-items: center;
 }

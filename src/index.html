@@ -4,31 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Google clon Brenda</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Google clone Brenda</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-                <div class="menu">
-                    <div class="email">
-                        <p>Gmail</p>
+    <header>
+        <div class="container1">
+            <nav>
+                <div class="optionuser">
+                    <div class="firstpart">
+                        <div class="email">
+                            <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
+                        </div>
+                        <div class="images">
+                            <a href="https://www.google.com.mx/imghp?hl=es-419&ogbl">Imágenes</a>
+                        </div>
                     </div>
-                    <div class="imagenes">
-                        <p>Imágenes</p>
-                    </div>
-                    <div class="apps_desplegables">
-                        <p></p>
-                    </div>
-                    <div class="access">
-                        <button>Acceder</buttom>
+                    <div class="secondpart">
+                        <div class="menudesplegable">
+                            <div class="puntitos">
+                                <a class="blockpoint" aria-label="Google Apps"
+                                    href="https://www.google.com.mx/intl/es-419/about/products" alt="apps-menu">
+                                    <img src="/src/img/icons8-squared-menu-30.png" alt="circle-menu">
+                                </a>
+                            </div>
+                        </div>
+                        <a class="access"
+                            href="https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.mx/&ec=GAZAmgQ"
+                            target="_top">Acceder</a>
                     </div>
                 </div>
-        </header>
-        <div class="icon">
-            <img src="https://www.google.com.mx/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="icon">
+            </nav>
         </div>
-        
+    </header>
+    <div class="google_icon">
+        <img src="/src/img/googlelogo_color_272x92dp.png" alt="logo">
+    </div>
+    <div class="caja_busqueda">
+        <form action="/search" method="get" role="search">
+            <div class="bloque">
+                <div class="bloque_cent">
+                    <div class="boxcirc">
+                        <div class="botones_busqueda">
+                            <div class="lupa">
+                                <div class="icon_lupa">
+                                    <span class="lupa">
+                                        <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjAiIGhlaWdodD0iMjAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2NjY2NjYyI+PHBhdGggZD0iTTY0LjUsMTQuMzMzMzNjLTI3LjYyMTQsMCAtNTAuMTY2NjcsMjIuNTQ1MjcgLTUwLjE2NjY3LDUwLjE2NjY3YzAsMjcuNjIxNCAyMi41NDUyNyw1MC4xNjY2NyA1MC4xNjY2Nyw1MC4xNjY2N2MxMi41MjczMiwwIDIzLjk3MjU2LC00LjY3MjQ5IDMyLjc4MTksLTEyLjMxNzcxbDMuMDUxNDMsMy4wNTE0M3Y5LjI2NjI4bDQzLDQzbDE0LjMzMzMzLC0xNC4zMzMzM2wtNDMsLTQzaC05LjI2NjI4bC0zLjA1MTQzLC0zLjA1MTQzYzcuNjQ1MjEsLTguODA5MzQgMTIuMzE3NzEsLTIwLjI1NDU4IDEyLjMxNzcxLC0zMi43ODE5YzAsLTI3LjYyMTQgLTIyLjU0NTI3LC01MC4xNjY2NyAtNTAuMTY2NjcsLTUwLjE2NjY3ek02NC41LDI4LjY2NjY3YzE5Ljg3NTA5LDAgMzUuODMzMzMsMTUuOTU4MjQgMzUuODMzMzMsMzUuODMzMzNjMCwxOS44NzUwOSAtMTUuOTU4MjUsMzUuODMzMzMgLTM1LjgzMzMzLDM1LjgzMzMzYy0xOS44NzUwOSwwIC0zNS44MzMzMywtMTUuOTU4MjUgLTM1LjgzMzMzLC0zNS44MzMzM2MwLC0xOS44NzUwOSAxNS45NTgyNCwtMzUuODMzMzMgMzUuODMzMzMsLTM1LjgzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"/>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="input_text">
+                                <input class="text_search" type="text" width="487px" height="34px">
+                                </div>
+                            </div>
+                            <div class="search_voice">
+                                <div class="icon_micro">
+                                    <div class="box.icon">
+                                        <span class="icon_mic">
+                                            <img src="/src/img/7123011_google_mic_icon.png" alt="mic" height="24px" width="24px">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botones_extra">
+                        <div class="container_botones">
+                            <button>Buscar con Google</button>
+                            <button>Me siento con suerte</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="spaceblank">
+        <span></span>
+    </div>
+    <div class="pie_de_pagina">
+        <div class="ubication">México</div>
+        <div class="information">
+            <div class="first">
+                <a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a>
+                <a href="https://www.google.com.mx/intl/es-419_mx/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
+                <a href="https://www.google.com.mx/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a>
+                <a href="https://google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a>
+            </div>
+            <span></span>
+            <div class="second">
+                <a href="https://policies.google.com/privacy?hl=es-419&fg=1">Privacidad</a>
+                <a href="https://policies.google.com/terms?hl=es-419&fg=1">Condiciones</a>
+                <a href="https://policies.google.com/terms?hl=es-419&fg=1">Preferencias</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
